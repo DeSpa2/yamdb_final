@@ -2,8 +2,6 @@ import csv
 import os
 
 from django.core.management.base import BaseCommand
-from django.db.utils import IntegrityError
-
 from reviews.models import (
     Category,
     Comment,
@@ -13,6 +11,8 @@ from reviews.models import (
     TitleGenre,
     User
 )
+from django.db.utils import IntegrityError
+
 from api_yamdb.settings import CSV_FILES_DIR
 
 FILE_NAMES_CLASSES = {
