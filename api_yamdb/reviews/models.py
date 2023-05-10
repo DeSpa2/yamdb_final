@@ -4,7 +4,6 @@ from django.core import validators
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 
-
 ROLES = (
     ('admin', 'Администратор'),
     ('moderator', 'Модератор'),
