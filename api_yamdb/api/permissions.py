@@ -1,6 +1,7 @@
 from rest_framework.permissions import BasePermission
 from rest_framework.permissions import SAFE_METHODS
 
+
 class AdminOnly(BasePermission):
 
     def has_permission(self, request, view):

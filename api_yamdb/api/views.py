@@ -34,6 +34,7 @@ from .serializers import (
     UserSerializer,
 )
 
+
 class CreateDestroyListViewSet(
     mixins.CreateModelMixin,
     mixins.DestroyModelMixin,
@@ -48,7 +49,6 @@ class CreateDestroyListViewSet(
 
 @api_view(['POST'])
 @permission_classes((AllowAny,))
-
 def get_token(request):
     serializer = TokenSerializer(data=request.data)
     if serializer.is_valid():
@@ -180,5 +180,4 @@ class ReviewViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         title_id = self.kwargs.get('title_id')
-        review_queryset = Review.objects.filter(title=title_id)
-        return review_queryset
+        return Review.objects.filter(title=title_id)

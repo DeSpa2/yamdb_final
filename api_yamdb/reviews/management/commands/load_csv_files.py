@@ -12,6 +12,7 @@ from reviews.models import (
     User
 )
 from django.db.utils import IntegrityError
+
 from api_yamdb.settings import CSV_FILES_DIR
 
 FILE_NAMES_CLASSES = {
