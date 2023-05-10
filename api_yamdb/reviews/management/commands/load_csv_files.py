@@ -6,7 +6,6 @@ from django.db.utils import IntegrityError
 from api_yamdb.settings import CSV_FILES_DIR
 from reviews.models import Category, Comment, Genre, Review, Title, TitleGenre, User
 
-
 FILE_NAMES_CLASSES = {
     'users.csv': User,
     'category.csv': Category,

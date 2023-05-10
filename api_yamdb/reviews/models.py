@@ -177,6 +177,3 @@ class Comment(models.Model):
     class Meta:
         verbose_name = 'Комментарий'
         verbose_name_plural = 'Комментарии'
-
-    def __str__(self):
-        return f'Оценка {self.author.username} на {self.review.title.name}'

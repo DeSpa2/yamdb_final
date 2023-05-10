@@ -43,7 +43,6 @@ from .serializers import (
     UserSerializer,
 )
 
-
 class CreateDestroyListViewSet(
     mixins.CreateModelMixin,
     mixins.DestroyModelMixin,
