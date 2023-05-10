@@ -1,7 +1,6 @@
 import os
-
-from pathlib import Path
 from datetime import timedelta
+from pathlib import Path
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -70,7 +69,7 @@ DATABASES = {
         'HOST': os.getenv('DB_HOST', default='db'),
         'PORT': os.getenv('DB_PORT', default='5432')
     }
-} 
+}
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -121,7 +120,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-#STATICFILES_DIRS = ((BASE_DIR / 'static/'),)
+# STATICFILES_DIRS = ((BASE_DIR / 'static/'),)
 
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 
