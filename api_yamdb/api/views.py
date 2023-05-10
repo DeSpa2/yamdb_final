@@ -15,7 +15,7 @@ from rest_framework_simplejwt.tokens import AccessToken
 
 from .constants import CONFIRMATION_CODE_LENGTH
 from .filters import TitleFilter
-from .models import Category, Genre, Review, Title, User
+from reviews.models import Category, Genre, Review, Title, User
 from .permissions import (
     AdminModeratorAuthorPermission,
     AdminOnly,
