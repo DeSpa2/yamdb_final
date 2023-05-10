@@ -1,23 +1,34 @@
 import random
 import string
+
 from django.core.mail import send_mail
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework import filters, mixins, status, viewsets
-from rest_framework.decorators import action, api_view, permission_classes
+from rest_framework import (
+    filters,
+    mixins,
+    status,
+    viewsets,
+)
+from rest_framework.decorators import (
+    action,
+    api_view,
+    permission_classes,
+)
 from rest_framework.filters import SearchFilter
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
+
 from .constants import CONFIRMATION_CODE_LENGTH
 from .filters import TitleFilter
 from .models import Category, Genre, Review, Title, User
 from .permissions import (
     AdminModeratorAuthorPermission,
     AdminOnly,
-    AdminOrReadOnly
+    AdminOrReadOnly,
 )
 from .serializers import (
     AdminUserSerializer,
@@ -29,7 +40,7 @@ from .serializers import (
     TitleReadSerializer,
     TitleWriteSerializer,
     TokenSerializer,
-    UserSerializer
+    UserSerializer,
 )
 
 
