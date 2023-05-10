@@ -1,7 +1,6 @@
 import csv
 import os
 
-from api_yamdb.settings import CSV_FILES_DIR
 from django.core.management.base import BaseCommand
 from django.db.utils import IntegrityError
 from reviews.models import (
@@ -13,6 +12,7 @@ from reviews.models import (
     TitleGenre,
     User
 )
+from api_yamdb.settings import CSV_FILES_DIR
 
 FILE_NAMES_CLASSES = {
     'users.csv': User,
