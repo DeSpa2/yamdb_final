@@ -1,7 +1,6 @@
 from django.contrib.auth.models import AbstractUser
 from django.core import validators
 from django.db import models
-
 from api.constants import CONFIRMATION_CODE_LENGTH
 from django.core.validators import MaxValueValidator, MinValueValidator
 
