@@ -1,4 +1,5 @@
 ![build status](https://github.com/lanazzk/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+Проект развернут по адресу: http://localhost:8000/redoc/
 # api_yamdb
 ### Приложение для сбора отзывов на произведения
 
