@@ -1,5 +1,5 @@
 ![build status](https://github.com/lanazzk/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
-Проект развернут по адресу: http://localhost:8000/redoc/
+Проект развернут по адресу: http://51.250.100.110/redoc/
 
 # api_yamdb
 ### Приложение для сбора отзывов на произведения
@@ -124,11 +124,6 @@ python3 manage.py runserver
   _Получение всех всех комментариев к отзыву._
 
 
-**Авторы:**
-
-https://github.com/arukantar
+**Автор:**
 
 https://github.com/DeSpa2
-
-https://github.com/anastasiamiron
-
